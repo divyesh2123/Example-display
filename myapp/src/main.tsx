@@ -2,12 +2,15 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import Counter from './Countet.tsx'
+
 import Display from './Display.tsx'
-import Countet from './Countet.tsx'
+import Counter from './Countet.tsx'
+import CounterInMyClass from './CounterInMyClass.tsx'
+import DisplayDataUsingAPI from './DisplayDataUsingAPI.tsx'
+import PostFunctnio from './PostFunctnio.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Display />
+    <PostFunctnio />
   </StrictMode>,
 )

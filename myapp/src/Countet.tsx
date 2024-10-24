@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-export default function Countet() {
-   
-    let name:string = "Test";
+export default function Counter() {
+
+   console.log("this has been changed");
+
+   const [counter,setcounter]= useState<number>(0);
+
+   const inc = ()=>{
+
+  setcounter(counter+1);
+   }
+
+   const dec = ()=>{
+    
+    setcounter(counter-1);
+   }
+
   return (
-    <div>{name}</div>
+    <div>{counter}
+
+      <button onClick={inc}>+</button>
+      <button onClick={dec}>-</button>
+    </div>
   )
 }
